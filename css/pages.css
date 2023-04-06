@@ -1,0 +1,189 @@
+/* pages and rabbit holes */
+:root {
+   --black: #000000;
+   --text: #f1f1f1;
+   --blue-dark: #3145FE;
+   --blue: #267DFE;
+   --blue-light: #5D9EFF;
+   --green-dark: #01731A;
+   --green: #008E1F;
+   --green-light: #6DEE8A;
+   --grey: #B9A9CE;
+   --offblack: #1B1B1B;
+   --offwhite: #f1f1f1;
+   --orange-dark: #B86306;
+   --orange: #F17E00;
+   --orange-light: #FFC27F;
+   --pink-dark: #C305A5;
+   --pink: #F31BDE;
+   --pink-light: #FF80F2;
+   --purple-dark: #3E0D7D;
+   --purple: #6E1ED2;
+   --purple-light: #B47BFA;
+   --teal-dark: #009998;
+   --teal: #2DFFFE;
+   --teal-light: #A9FFFF;
+   --yellow-dark: #F2BF29;
+   --yellow: #FFD761;
+   --yellow-light: #FDE89F;
+   --white: #ffffff;
+         }
+/* body */
+body {
+background-color: var(--offblack);
+}
+
+body, html {height: 100%}
+.bgimg {
+  background-image: url('../images/background-1.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.n-blue-dark {
+  background-color: var(--blue-dark);
+  color: var(--white) !important;
+}
+.n-blue {
+  background-color: var(--blue);
+  color: var(--white) !important;
+}
+.n-blue-light {
+  background-color: var(--blue-light);
+  color: var(--white) !important;
+}
+.n-hover-blue:hover{
+  color:#fff!important;
+  background-color: var(--blue)!important;
+}
+.n-hover-blue-dark:hover{
+  color:#fff!important;
+  background-color: var(--blue-dark)!important;
+}
+.n-text-blue {
+  color: var(--blue-light);
+}
+.n-text-blue-dark {
+  color: var(--blue-dark);
+}
+.n-green-dark {
+  background-color: var(--green-dark);
+  color: var(--white) !important;
+}
+.n-green {
+  background-color: var(--green);
+  color: var(--white) !important;
+}
+.n-green-light {
+  background-color: var(--green-light);
+  color: var(--white) !important;
+}
+.n-hover-green:hover{
+  color:#fff!important;
+  background-color: var(--green)!important;
+}
+.n-text-green {
+  color: var(--green-light);
+}
+.n-orange-dark {
+  background-color: var(--orange-dark);
+  color: var(--white) !important;
+}
+.n-orange {
+  background-color: var(--orange);
+  color: var(--white) !important;
+}
+.n-orange-light {
+  background-color: var(--orange-light);
+  color: var(--white) !important;
+}
+.n-hover-orange:hover{
+  color:#fff!important;
+  background-color: var(--orange)!important;
+}
+.n-text-orange {
+  color: var(--orange);
+}
+.n-purple-dark {
+  background-color: var(--purple-dark);
+  color: var(--white) !important;
+}
+.n-purple {
+  background-color: var(--purple);
+  color: var(--white) !important;
+}
+.n-purple-light {
+  background-color: var(--purple-light);
+  color: var(--white) !important;
+}
+.n-hover-purple:hover{
+  color:#fff!important;
+  background-color: var(--purple)!important;
+}
+.n-text-purple {
+  color: var(--purple-light);
+}
+.n-text-purple-dark {
+  color: var(--purple);
+}
+.n-teal-dark {
+  background-color: var(--teal-dark);
+  color: var(--white) !important;
+}
+.n-teal {
+  background-color: var(--teal);
+  color: var(--black) !important;
+}
+.n-teal-light {
+  background-color: var(--teal-light);
+  color: var(--white) !important;
+}
+.n-hover-teal:hover{
+  color:#000!important;
+  background-color: var(--teal)!important;
+}
+.n-text-teal {
+  color: var(--teal-light);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Aldrich", sans-serif;
+}
+p {
+  font-family: "Alata", sans-serif;
+  color: var(--offwhite);
+}
+
+.npub {
+  word-wrap: break-word;
+}
+
+.youtube-video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+.youtube-video::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: var(--offblack);}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
