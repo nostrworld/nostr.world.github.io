@@ -10,6 +10,7 @@
    --green-light: #6DEE8A;
    --grey: #B9A9CE;
    --nostr-world: #4E3FA9;
+   --nostr-world-light: #9A6CD3;
    --offblack: #1B1B1B;
    --offwhite: #f1f1f1;
    --orange-dark: #B86306;
@@ -100,7 +101,7 @@ body, html {height: 100%}
 }
 
 .n-text-nostr-world {
-  color: var(--nostr-world);
+  color: var(--nostr-world-light);
 }
 
 .n-orange-dark {
