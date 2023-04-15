@@ -9,6 +9,7 @@
    --green: #008E1F;
    --green-light: #6DEE8A;
    --grey: #B9A9CE;
+   --nostr-world: #4E3FA9;
    --offblack: #1B1B1B;
    --offwhite: #f1f1f1;
    --orange-dark: #B86306;
@@ -30,7 +31,7 @@
          }
 /* body */
 body {
-background-color: var(--offblack);
+background-color: var(--nostr-world);
 }
 
 body, html {height: 100%}
@@ -40,6 +41,7 @@ body, html {height: 100%}
   background-position: center;
   background-size: cover;
 }
+.mySlides {display: none}
 
 .n-blue-dark {
   background-color: var(--blue-dark);
@@ -86,6 +88,21 @@ body, html {height: 100%}
 .n-text-green {
   color: var(--green-light);
 }
+
+.n-nostr-world {
+  background-color: var(--nostr-world);
+  color: var(--white) !important;
+}
+
+.n-hover-nostr-world:hover{
+  color:#fff!important;
+  background-color: var(--nostr-world)!important;
+}
+
+.n-text-nostr-world {
+  color: var(--nostr-world);
+}
+
 .n-orange-dark {
   background-color: var(--orange-dark);
   color: var(--white) !important;
