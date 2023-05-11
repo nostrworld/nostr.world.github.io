@@ -31,17 +31,18 @@
    --white: #ffffff;
          }
 /* body */
-body {
-background-color: var(--nostr-world);
+body, html {
+  height: 100%
+  background-color: var(--nostr-world);
 }
 
-body, html {height: 100%}
 .bgimg {
   background-image: url('../images/background-1.png');
   min-height: 100%;
   background-position: center;
   background-size: cover;
 }
+
 .mySlides {display: none}
 
 .n-blue-dark {
@@ -202,6 +203,25 @@ p {
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: var(--offblack);}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+.n-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.n-col-container {
+  display: flex;
+}
+
+.n-col-container > .n-col {
+
+}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+@media only screen and (max-width: 600px) {
+  #main {margin-left: 0}
+  .n-col {
+    display: block !important;
+    width: 100%;
+  }
+}
