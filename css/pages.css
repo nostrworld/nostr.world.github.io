@@ -42,8 +42,6 @@ body, html {
   background-image: url('../assets/images/nostrasia/nostrasia-background.png');
   background-position: center;
   background-size: cover;
-  min-width: 100%;
-  background-repeat: none;
 }
 
 .bgimg {
