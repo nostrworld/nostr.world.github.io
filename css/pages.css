@@ -44,6 +44,15 @@ body, html {
   background-size: cover;
 }
 
+.n-nostr-world-nav {
+  background: rgba(77, 16, 185, .6);
+}
+
+.n-hover-nostr-world-nav {
+  background: rgba(77, 16, 185, 0.2);
+}
+
+
 .bgimg {
   background-image: url('../images/background-1.png');
   background-position: center;
@@ -208,13 +217,13 @@ body, html {
   opacity: 1 !important;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1 {
   font-family: "Bruno Ace", sans-serif;
   letter-spacing: 3px;
   margin: 0;
   padding: 0;
 }
-p {
+h2, h3, h4, h5, h6, p {
   font-family: "Chivo", sans-serif;
   color: var(--offwhite);
   margin: 0;
@@ -237,8 +246,12 @@ p {
 
 .no-padding {
   padding: 0;
-  margin: 0;
 }
+
+.no-margin {
+  margin: 0 !important;
+}
+
 
 .npub {
   word-wrap: break-word;
@@ -283,11 +296,53 @@ p {
 
 }
 
-no-padding {
+.no-padding {
   padding: 0!important;
   margin: 0!important;
 }
 
+/* overlay image */
+.n-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.n-image-with-overlay {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.n-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--nostr-world);
+  border-radius: 25px;
+}
+
+.n-image-container:hover .n-overlay {
+  opacity: .8;
+}
+
+.n-overlay-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+/* other */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {

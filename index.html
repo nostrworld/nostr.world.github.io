@@ -25,21 +25,23 @@
   </head>
 <body class="n-background">
   <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar n-nostr-world w3-card">
-      <a class="w3-bar-item w3-button w3-hover-black w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button n-hover-nostr-world w3-padding w3-left n-font"><img src="assets/images/nostr-world/profile-nostr-world.png" class="w3-image" alt="nostr world">&nbsp;&nbsp;NOSTR.WORLD</a>
-      <a href="why-nostr/index.html" class="w3-bar-item w3-button w3-hover-black w3-padding-large w3-hide-small w3-right">WHY NOSTR?</a>
-      <a href="behind-the-scenes/index.html" class="w3-bar-item w3-button w3-hover-black w3-padding-large w3-hide-small w3-right">BEHIND-THE-SCENES</a>
-      <a href="hackathon/index.html" class="w3-bar-item w3-button w3-hover-black w3-padding-large w3-hide-small w3-right">HACKATHON</a>
-      <a href="javascript:void(0)" class="w3-padding-large n-hover-nostr-world w3-hide-small w3-right"></a>
+  <div class="w3-top n-nostr-world-nav">
+    <div class="w3-bar w3-card">
+      <a class="w3-bar-item w3-button w3-text-white w3-hover-black w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-text-white w3-hover-black w3-padding w3-left n-font"><img src="assets/images/nostr-world/profile-nostr-world.png" class="w3-image" alt="nostr world">&nbsp;&nbsp;NOSTR.WORLD</a>
+      <a href="why-nostr/index.html" class="w3-bar-item w3-button w3-text-white w3-hover-black w3-padding-large w3-hide-small w3-right" alt="why nostr">WHY NOSTR?</a>
+      <a href="behind-the-scenes/index.html" class="w3-bar-item w3-button w3-text-white w3-hover-black w3-padding-large w3-hide-small w3-right" alt="behind-the-scenes">BEHIND-THE-SCENES</a>
+      <a href="hackathon/index.html" class="w3-bar-item w3-button w3-text-white w3-hover-black w3-padding-large w3-hide-small w3-right" alt="hackathon">HACKATHON</a>
+      <a href="tracks/speakers/index.html" class="w3-bar-item w3-button w3-text-white w3-hover-black w3-padding-large w3-hide-small w3-right" alt="tracks">TRACKS</a>
+      <a href="javascript:void(0)" class="w3-padding-large w3-text-white w3-hover-black w3-hide-small w3-right"></a>
     </div>
   </div>
   <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
   <div id="navDemo" class="w3-bar-block n-purple w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="hackathon/index.html" class="w3-bar-item w3-button w3-hover-black w3-padding-large" onclick="myFunction()">HACKATHON</a>
-    <a href="behind-the-scenes/index.html" class="w3-bar-item w3-button  w3-hover-black w3-padding-large" onclick="myFunction()">BEHIND THE SCENES</a>
-    <a href="why-nostr/index.html" class="w3-bar-item w3-button w3-hover-black w3-padding-large" onclick="myFunction()">WHY NOSTR?</a>
+    <a href="tracks/speakers/index.html" class="w3-bar-item w3-button w3-hover-black w3-padding-large" alt="tracks" onclick="myFunction()">TRACKS</a>
+    <a href="hackathon/index.html" class="w3-bar-item w3-button w3-hover-black w3-padding-large" alt="hackathon" onclick="myFunction()">HACKATHON</a>
+    <a href="behind-the-scenes/index.html" class="w3-bar-item w3-button  w3-hover-black w3-padding-large" alt="behind the scenes" onclick="myFunction()">BEHIND THE SCENES</a>
+    <a href="why-nostr/index.html" class="w3-bar-item w3-button w3-hover-black w3-padding-large" alt="why nostr" onclick="myFunction()">WHY NOSTR?</a>
   </div>
   <!--- End Nav Bar --->
   <!-- Start Page content -->
@@ -63,11 +65,47 @@
     </div>
   </header>
   <div class="w3-content n-nostr-world n-background" style="max-width:2000px;">
-      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="unconferences">
+    <h2 class="w3-wide w3-xxlarge w3-text-white w3-padding">NOSTRASIA VOICES</h2>
+    <br>
+  <!--- speakers -->
+  <!--- Row 1 --->
+      <div class="w3-row-padding w3-padding-0" style="margin:0 -16px">
+  <!--- Nostrasia Tokyo --->
+        <div class="w3-container w3-display-container w3-margin-bottom">
+          <div class="w3-third w3-margin-bottom">
+            <div class="w3-container n-image-container">
+              <img src="assets/images/nostrasia/speakers/nostrasia-speaker-edward-snowden.png" alt="nostrasia speaker Edward Snowden" class="n-image-with-overlay">
+              <div class="n-overlay">
+                <div class="n-overlay-text"><p class="w3-large">"#nostr is an open protocol. <br>If a platform is a silo, a protocol is a river: no one owns it, and everyone is free to swim."</p>  
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container">
+            <a href="tracks/speakers/index.html" class="" alt="Nostrasia speakers"><img src="assets/images/nostrasia/speakers/nostrasia-speakers.png" alt="nostrasia speakers" class="w3-image"></a>
+          </div>
+      </div>
+          <div class="w3-third w3-margin-bottom">
+            <div class="w3-container n-image-container">
+              <img src="assets/images/nostrasia/speakers/nostrasia-speaker-jack-dorsey.png" alt="nostrasia speaker jack" class="n-image-with-overlay">
+              <div class="n-overlay">
+                <div class="n-overlay-text"><p class="w3-large">"The only solution is to build on unowned protocols like nostr and bitcoin."</p>  
+                </div>
+              </div>
+            </div>
+        </div>
+  <!--- End Nostrasia Tokyo --->
+  </div>
+  </div>
+  </div>
+
+      <div class="w3-container w3-content" style="max-width:800px" id="about">
 <!--- End Row 1 --->
         <h2 class="w3-wide w3-center w3-xxlarge">FREE & FREEING</h2>
-        <p class="w3-xlarge">Nostr is a different kind of social media experience. It <span class="n-text-purple">frees</span> people from platforms. NOSTR WORLD unconferences celebrate nostr's decentralization.</p>
-        <p class="w3-xlarge">Unconference online events, in-person admission tickets & shared meals are <span class="n-text-purple">free</span>. <span class="w3-xlarge">(thanks to jack <img src="images/shaka.png" alt="shaka hand emoticon"/>)</span></p>
+        <p class="w3-xlarge">Nostr is a different kind of social media experience. It <span class="n-text-purple">frees</span> people from platforms. NOSTR WORLD conferences celebrate nostr's community and its open permissionless building spirit.</p>
+        <p class="w3-xlarge">Conference online events, in-person admission tickets & shared meals are <span class="n-text-purple">free</span>. <span class="w3-xlarge">(thanks to jack <img src="images/shaka.png" alt="shaka hand emoticon"/>)</span></p>
         <p class="n-text-purple w3-large w3-round-xlarge">*all attendees are responsible for their own travel and lodging expenses. Thank you.<br><br></p>
         <p class="w3-text-light-grey w3-xlarge">Family friendly</p>
         <p class="w3-text-light-grey w3-xlarge">Nym friendly and privacy mindful</p>
@@ -75,8 +113,8 @@
         <p class="w3-text-light-grey w3-xlarge">Opportunities to give-back</p>
   </div>
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="unconferences">
-    <h3 class="w3-wide w3-xlarge w3-text-white">LOCATIONS</h3>
-  <!--- Unconferences -->
+    <h3 class="w3-wide w3-xlarge w3-text-white w3-padding">LOCATIONS</h3>
+  <!--- conference locations -->
   <!--- Row 1 --->
       <div class="w3-row-padding w3-padding-0" style="margin:0 -16px">
   <!--- Nostrasia Tokyo --->
@@ -93,7 +131,7 @@
             <p class="w3-large"><a href="https://www.newworldmillenniumhotel.com/en/" target="new" alt="Hong Kong Nostrasia Location">New World Millenium Hong Kong Hotel</a></p>
           </div>
       </div>
-  <!--- End Nostrasia Tokyo --->
+  <!--- End Nostrasia locations --->
   </div>
   </div>
   </div>
