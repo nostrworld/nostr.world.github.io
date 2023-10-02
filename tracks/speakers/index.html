@@ -24,26 +24,35 @@
       <link rel="stylesheet" type="text/css" href="../../css/pages.css" />
   </head>
 <body class="n-nostr-world">
-  <!-- Navbar -->
-  <div class="w3-top n-nostr-world-nav">
-    <div class="w3-bar w3-card">
-      <a class="w3-bar-item w3-button w3-text-white w3-hover-black w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="../../index.html" class="w3-bar-item w3-button w3-text-white w3-hover-black w3-padding w3-left n-font"><img src="../../assets/images/nostr-world/profile-nostr-world.png" class="w3-image" alt="nostr world">&nbsp;&nbsp;NOSTR.WORLD</a>
-      <a href="../../why-nostr/index.html" class="w3-bar-item w3-button w3-text-white w3-hover-black w3-padding-large w3-hide-small w3-right" alt="why nostr">WHY NOSTR?</a>
-      <a href="../../behind-the-scenes/index.html" class="w3-bar-item w3-button w3-text-white w3-hover-black w3-padding-large w3-hide-small w3-right" alt="behind-the-scenes">BEHIND-THE-SCENES</a>
-      <a href="../../hackathon/index.html" class="w3-bar-item w3-button w3-text-white w3-hover-black w3-padding-large w3-hide-small w3-right" alt="hackathon">HACKATHON</a>
-      <a href="#" class="w3-bar-item w3-button w3-text-amber w3-hover-black w3-padding-large w3-hide-small w3-right" alt="tracks">TRACKS</a>
-      <a href="javascript:void(0)" class="w3-padding-large w3-text-white w3-hover-black w3-hide-small w3-right"></a>
+  <!-- nav --->
+<div class="w3-top">
+<div class="topnav" id="myTopnav">
+  <a href="../../index.html"><img src="../../assets/images/nostr-world/profile-nostr-world.png" class="w3-image" alt="nostr world">&nbsp;&nbsp;NOSTR.WORLD</a>
+  <div class="dropdown active">
+    <button class="dropbtn">tracks 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#" alt="speakers">speakers</a>
+      <a href="https://nostrasia.notion.site/c7f8a308b50b4d169678ad9b748894d5?v=e2cbbbc90e494b578ef17d36a6d2725c" alt="agenda" target="new">agenda</a>
+      <a href="../../why-nostr/index.html" alt="why nostr">why nostr</a>
     </div>
-  </div>
-  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-  <div id="navDemo" class="w3-bar-block n-purple w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="#" class="w3-bar-item w3-button w3-text-amber w3-hover-black w3-padding-large" alt="tracks" onclick="myFunction()">TRACKS</a>
-    <a href="../../hackathon/index.html" class="w3-bar-item w3-button w3-hover-black w3-padding-large" alt="hackathon" onclick="myFunction()">HACKATHON</a>
-    <a href="../../behind-the-scenes/index.html" class="w3-bar-item w3-button  w3-text-white w3-hover-black w3-padding-large" alt="behind the scenes" onclick="myFunction()">BEHIND THE SCENES</a>
-    <a href="../why-nostr/index.html" class="w3-bar-item w3-button w3-hover-black w3-padding-large" alt="why nostr" onclick="myFunction()">WHY NOSTR?</a>
-  </div>
-  <!--- End Nav Bar --->
+  </div> 
+  <a href="../../hackathon/index.html">hackathon</a>
+  <div class="dropdown">
+    <button class="dropbtn">behind-the-scenes 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="../../behind-the-scenes/team/index.html" alt="speakers">team</a>
+      <a href="../../behind-the-scenes/memories/index.html" alt="memories">memories</a>
+    </div>
+  </div> 
+  <a href="../../faq/index.html">?&nbsp;FAQ</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</div>
+<!--- end nav --->
   <!-- Start Page content -->
   <!-- Header -->
   <div class="w3-content w3-padding" style="max-width:1500px" id="speakers">
@@ -383,6 +392,14 @@
     if (event.target == modal) {
       modal.style.display = "none";
     }
+    // Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
   }
   </script>
 
