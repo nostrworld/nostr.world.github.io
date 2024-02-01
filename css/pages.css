@@ -251,7 +251,7 @@ body {
 
 @media (max-width: 860px) {
     .menu__body {
-        position: fixed;
+        position: absolute;
         top: 90px;
         background-color: rgb(12, 0, 32);
         width: 100%;
