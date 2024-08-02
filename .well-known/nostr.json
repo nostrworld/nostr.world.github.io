@@ -1,0 +1,13 @@
+{
+	"names": {
+		"_": "9c163c7351f8832b08b56cbb2e095960d1c5060dd6b0e461e813f0f07459119e"
+	},
+	"relays": {
+		"9c163c7351f8832b08b56cbb2e095960d1c5060dd6b0e461e813f0f07459119e": [
+			"wss://relay.damus.io/",
+			"wss://nostr-pub.wellorder.net/",
+			"wss://nostr.wine/",
+			"wss://nos.lol/"
+		]
+	}
+}
