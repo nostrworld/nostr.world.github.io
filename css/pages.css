@@ -216,6 +216,12 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .nav__link {
+    font-size: 12px;
+  }
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -288,19 +294,6 @@ body {
 /* hero and page css */
 .page {
   height: 100%;
-}
-
-@media screen and (max-width: 1400px) and (min-width: 0px) {
-  .page {
-    overflow-x: hidden;
-  }
-}
-
-@media screen and (max-width: 1200px) and (min-width: 0px) {
-  .page {
-    margin-top: 0;
-    overflow-x: hidden;
-  }
 }
 
 .header {
@@ -1470,19 +1463,6 @@ a {
   }
 }
 
-@media screen and (max-width: 1400px) and (min-width: 0px) {
-  .page {
-    overflow-x: hidden;
-  }
-}
-
-@media screen and (max-width: 1200px) and (min-width: 0px) {
-  .page {
-    margin-top: 0;
-    overflow-x: hidden;
-  }
-}
-
 .speakers__title {
   color: #ffb52e;
   font-family: Contrail One, cursive, Arial, sans-serif;
@@ -1555,27 +1535,31 @@ a {
   justify-content: center;
 }
 
+.speakers .persons__wrap {
+  justify-items: center;
+  max-width: 1440px;
+  width: 100%;
+}
+
 .persons__wrap {
   grid-gap: 4rem 2rem;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   margin: 0 auto;
   max-width: 1351px;
 }
-
+@media screen and (max-width: 1200px) and (min-width: 767px) {
+  .persons__wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media screen and (max-width: 767px) and (min-width: 0px) {
   .persons__wrap {
     align-items: center;
     grid-template-columns: 1fr;
     justify-items: center;
   }
-}
-
-.speakers .persons__wrap {
-  justify-items: center;
-  max-width: 1440px;
-  width: 100%;
 }
 
 .persons .person {
@@ -1595,4 +1579,36 @@ a {
   border: 1px solid #0b0a0b;
   height: 210px;
   width: 210px;
+}
+
+.persons .person .block__text,
+.persons .person .block__title {
+  max-width: 225px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 0px) {
+  .persons .person .block__icons,
+  .persons .person .block__text,
+  .persons .person .block__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 0px) {
+  .page {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 0px) {
+  .page {
+    margin-top: 0;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 767px) {
+  .persons {
+    padding: 80px 30px;
+  }
 }
