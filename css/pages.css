@@ -1469,7 +1469,7 @@ a {
 
 .speakers__title {
   color: #ffb52e;
-  font-family: Contrail One, cursive, Arial, sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 68px;
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -1485,12 +1485,6 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   width: 100%;
-}
-
-@media screen and (max-width: 880px) {
-  .speakers__title {
-    -webkit-text-stroke: 1px #0b0a0b;
-  }
 }
 
 @media screen and (max-width: 548px) {
