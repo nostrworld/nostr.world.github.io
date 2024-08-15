@@ -1381,7 +1381,7 @@ footer {
   padding: 24px;
 }
 .all-black {
-  background-color: #0b0a0b;
+  background-color: #0b0a0b !important;
   color: #fff !important;
 }
 
@@ -1461,6 +1461,10 @@ a {
   .bitcoin-week .days-block__info {
     padding: 16px 16px 32px;
   }
+}
+
+.all-black-list {
+  color: white !important;
 }
 
 .speakers__title {
